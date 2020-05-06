@@ -2902,7 +2902,7 @@
 
 	body {
 		background-color: #1e1f23;
-		padding-top: 01rem;
+		padding-top: 0rem;
 	}
 
 		body.is-loading:after {
@@ -2921,10 +2921,10 @@
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			content: '';
 			background-image: url(../../Images/background.png);
-			background-attachment:fixed;
-			background-position:center;
+			background-attachment:scroll;
+			background-position:top;
 			background-repeat: no-repeat;
-			background-size: cover;
+			background-size:cover;
 			position: fixed;
 			display:block;
 			top: 0;
@@ -2933,14 +2933,14 @@
 			width: 100%;
 			z-index: -1;
 			visibility: visible;
-			opacity:0.7;
+			opacity:0.5;
 		}
 
 			@media screen and (max-width: 980px) {
 
 				body:after {
-					background-attachment: scroll;
-					background-position:center;
+					background-attachment:scroll;
+					background-position:top;
 					background-size: 100%;
 				}
 
@@ -2977,9 +2977,9 @@
 	@media screen and (max-width: 1280px) {
 
 		body {
-			padding-top: 0rem;
+			padding-top: 02 rem;
 			background-attachment: scroll;
-			background-size: auto;
+			background-size: contain;
 			background-position: top;
 		}
 
